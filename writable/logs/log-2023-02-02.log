@@ -1,0 +1,145 @@
+CRITICAL - 2023-02-02 16:05:44 --> Invalid file: "modals/usuario/nuevo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modals/usuario/nuevo.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('modals/usuario/nuevo', [], true)
+ 3 APPPATH\Controllers\UsuariosController.php(16): view('modals/usuario/nuevo')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsuariosController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-02 19:19:24 --> mysqli_sql_exception: Unknown column 'telefono' in 'field list' in C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\AUTOLAVADO-CD\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\AUTOLAVADO-CD\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\AUTOLAVADO-CD\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\AUTOLAVADO-CD\app\Controllers\UsuariosController.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\AUTOLAVADO-CD\system\CodeIgniter.php(934): App\Controllers\UsuariosController->new()
+#9 C:\xampp\htdocs\AUTOLAVADO-CD\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+#10 C:\xampp\htdocs\AUTOLAVADO-CD\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\AUTOLAVADO-CD\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\AUTOLAVADO-CD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-02-02 19:19:24 --> Unknown column 'telefono' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`usuario`, `nombre`, `password`, `telefono`, `tipo`) VALUES (:usuario:, :nombre:, :password:, :telefono:, :tipo:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UsuariosController.php(45): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsuariosController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-02 19:27:35 --> mysqli_sql_exception: Unknown column 'telefono' in 'field list' in C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\AUTOLAVADO-CD\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\AUTOLAVADO-CD\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\AUTOLAVADO-CD\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\AUTOLAVADO-CD\app\Controllers\UsuariosController.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\AUTOLAVADO-CD\system\CodeIgniter.php(934): App\Controllers\UsuariosController->new()
+#9 C:\xampp\htdocs\AUTOLAVADO-CD\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+#10 C:\xampp\htdocs\AUTOLAVADO-CD\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\AUTOLAVADO-CD\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\AUTOLAVADO-CD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-02-02 19:27:35 --> Unknown column 'telefono' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`usuario`, `nombre`, `password`, `telefono`, `tipo`) VALUES (:usuario:, :nombre:, :password:, :telefono:, :tipo:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UsuariosController.php(45): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsuariosController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-02 19:35:49 --> mysqli_sql_exception: Duplicate entry 'pablovergara' for key 'usuario' in C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\AUTOLAVADO-CD\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\AUTOLAVADO-CD\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\AUTOLAVADO-CD\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\AUTOLAVADO-CD\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\AUTOLAVADO-CD\app\Controllers\UsuariosController.php(49): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\AUTOLAVADO-CD\system\CodeIgniter.php(934): App\Controllers\UsuariosController->new()
+#9 C:\xampp\htdocs\AUTOLAVADO-CD\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+#10 C:\xampp\htdocs\AUTOLAVADO-CD\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\AUTOLAVADO-CD\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\AUTOLAVADO-CD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-02-02 19:35:49 --> Duplicate entry 'pablovergara' for key 'usuario'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`usuario`, `nombre`, `password`, `telefono`, `tipo`) VALUES (:usuario:, :nombre:, :password:, :telefono:, :tipo:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UsuariosController.php(49): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsuariosController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 19:49:24 --> Object of type App\Models\ModelUsuarios is not callable
+in APPPATH\Controllers\UsuariosController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsuariosController->getAll()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 19:49:57 --> Object of type App\Models\ModelUsuarios is not callable
+in APPPATH\Controllers\UsuariosController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsuariosController->getAll()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 19:50:06 --> Object of type App\Models\ModelUsuarios is not callable
+in APPPATH\Controllers\UsuariosController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsuariosController->getAll()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 19:51:48 --> Call to undefined function App\Controllers\getStatus()
+in APPPATH\Controllers\UsuariosController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsuariosController->getAll()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 19:51:52 --> Call to undefined function App\Controllers\getStatus()
+in APPPATH\Controllers\UsuariosController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsuariosController->getAll()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 20:09:42 --> Array to string conversion
+in APPPATH\Controllers\UsuariosController.php on line 31.
+ 1 APPPATH\Controllers\UsuariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\UsuariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsuariosController->getAll()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 20:10:02 --> Array to string conversion
+in APPPATH\Controllers\UsuariosController.php on line 31.
+ 1 APPPATH\Controllers\UsuariosController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\UsuariosController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UsuariosController->getAll()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
